@@ -26,6 +26,9 @@ p {
   padding: 0;
 }
 /* logo */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .logo {
   font-family: Raleway;
   color: #000;
@@ -45,9 +48,7 @@ p {
   display: flex;
   align-items: center;
 }
-.main-nav {
-  border-bottom: 1px solid #ececec;
-}
+
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -111,8 +112,7 @@ p {
   color: var(--primary-bg-color);
 }
 .hero-button {
-  min-width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   border-radius: 4px;
   border: none;
   font-family: inherit;
@@ -141,6 +141,15 @@ p {
   color: var(--title-text-color);
 }
 /* advantage */
+.advantage {
+  display: flex;
+}
+.advantage .item {
+  width: calc((100%-90px) / 4);
+}
+.advantage .item:not(:last-child) {
+  margin-right: 30px;
+}
 .advantage .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -155,17 +164,37 @@ p {
   line-height: 1.71;
 }
 /* works type */
+.section-works-type {
+  padding-top: 0;
+}
+.works-type {
+  display: flex;
+}
+.works-type .item:not(:last-child) {
+  margin-right: 30px;
+}
+.works-type .image {
+  display: block;
+}
 
 /* team */
+.team {
+  display: flex;
+}
 .team .item {
-  display: inline-block;
-  height: 368px;
+  text-align: center;
+  padding-bottom: 30px;
+  width: calc((100%-90px) / 4);
+}
+.team .item:not(:last-child) {
+  margin-right: 30px;
 }
 .section-team {
   background-color: #f5f4fa;
 }
 .team .photo {
   margin-bottom: 30px;
+  display: block;
 }
 .team .title {
   margin-top: 0;
@@ -201,6 +230,9 @@ p {
 .address {
   padding-bottom: 60px;
 }
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .address .contacts {
   font-style: normal;
   font-weight: 400;
@@ -220,7 +252,15 @@ p {
 }
 
 /* portfolio */
+.btns-portfolio {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
 .button-portfolio {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -230,12 +270,41 @@ p {
   cursor: pointer;
   color: var(--title-text-color);
 }
+.btns-portfolio .item:not(:last-child) {
+  margin-right: 8px;
+}
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
+.work-examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.work-examples .item {
+  width: 370px;
+  margin: 15px;
+}
+.work-examples .item-title-text {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+/* .work-examples .item:nth-child(3n) {
+  margin-right: 0px;
+}
+.work-examples .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+.work-examples .image {
+  display: block;
+}
 .work-examples .title {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
