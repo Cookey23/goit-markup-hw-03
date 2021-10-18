@@ -97,6 +97,8 @@ p {
 
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--secondary-bg-color);
 }
@@ -118,6 +120,7 @@ p {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
+  line-height: 1.87;
   cursor: pointer;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
@@ -216,7 +219,6 @@ p {
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
-  padding-top: 60px;
   font-family: Raleway;
   color: var(--primary-bg-color);
   text-decoration: none;
@@ -227,7 +229,8 @@ p {
 .footer-web {
   color: var(--accent-color);
 }
-.address {
+.footer {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .address .item:not(:last-child) {
